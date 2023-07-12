@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/confix_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;600&family=Noto+Sans+Thai:wght@700&family=Pattaya&display=swap"
+    rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="card">
+    <body>
+            <div class="container mt-3">
+                <p class="fs-2">User Login</p>
+                <form method="post" action="./c_authen.php">
+            <div class="mb-3 mt-3">
+                <label for="dept_no" class="Username">Username</label>
+                <input type="text" class="form-control" name="frmLogin" id="frmLogin"  placeholder="Enter your username">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="password" class="password">Password</label>
+                <input type="password" class="form-control" name="frmPwd" id="frmPwd"placeholder="Enter your Password">
+            </div>
+                <input type="submit" class="btn btn-primary" value="Sign in">
+                <input type="submit" class="btn btn-danger" value="Sign up" formaction="register.html">
+                </form>
+             </div>
+        </body>
+</div>
+</body>
+</html>

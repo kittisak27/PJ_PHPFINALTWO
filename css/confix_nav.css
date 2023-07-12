@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+.btn-hamburger {
+    font-size: 1.5rem;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+nav ul li a:hover {
+    color: #ccc;
+}
+.btn-Logout {
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    color: #fff;
+    border-radius: 5px;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+    nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-hamburger {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+    }
+    nav h2 {
+        margin: 20px 0;
+    }
+    nav ul {
+        width: 100%;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        transition: .3s ease;
+    }
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .btn-signin {
+        background: none;
+        color: #333;
+        border-bottom: none;
+    }
+    .nav-active {
+        display: flex;
+    }
+}
+card {
+    background: #000033;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+  }

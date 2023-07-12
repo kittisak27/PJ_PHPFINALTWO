@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/confix_nav.css" />
+<style>   
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding:  16px;
+  background-color: #ded8d8;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.button a{
+  color: white;
+}
+.ourteam{
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    height: 100px;
+    padding-top: 40px;
+    background-color: rgb(163, 154, 137);
+}
+  .button a:link {
+    text-decoration: none;
+  }
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+    <nav>
+        <button class="btn-hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+  
+        <h2>PROJECT PHP</h2>
+  
+        <ul>
+          <li><a href="./nav.html">Home</a></li>
+          <li><a href="list_crud.php">Data</a></li>
+          <li><a href="./user_detail.php">Account</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="c_logout.php" class="btn-Logout">Logout</a></li>
+        </ul>
+      </nav>
+<h2 class="ourteam">TEAM PROJECT</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/p1.jpg" alt="6350110001e" style="width:100%">
+      <div class="container">
+        <h2>Kittisak Sutthikittipong</h2>
+        <p>6350110001@psu.ac.th</p>
+        <p>Faculty of Commerce and Management Information and Computer Management</p>
+        <p><button class="button"><a href="https://www.facebook.com/kittisak2243">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+   <div class="column">
+    <div class="card">
+      <img src="images/p2.jpg" alt="6350110002" style="width:100%">
+      <div class="container">
+        <h2>Chayanon Muadsong</h2>
+        <p>6350110002@psu.ac.th</p>
+        <p>Faculty of Commerce and Management Information and Computer Management</p>
+        <p><button class="button"><a href="https://www.facebook.com/profile.php?id=100009626741812"> Contact</a></button></p>
+      </div>
+    </div>
+  </div> 
+  
+   <div class="column">
+    <div class="card">
+      <img src="images/p23.jpg" alt="6350110023" style="width:100%">
+      <div class="container">
+        <h2>Nattapat Chaiphet</h2>
+        <p>6350110023@psu.ac.th</p>
+        <p>Faculty of Commerce and Management Information and Computer Management</p>
+        <p><button class="button"><a href="https://www.facebook.com/profile.php?id=100009591681181"> Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
